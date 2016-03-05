@@ -1,4 +1,9 @@
 #!/bin/bash
+# File: caffe_install.sh
+# Author: Jason D. Miller, hack-r.github.io
+# Description: This script automatically installs and configures Caffe for Python on Ubuntu
+# Comment: I wrote this for the modern version of Python because it has been in production over 8 years, but if you insist on using ancient Python, just change python3 to python and pip3 to pip
+
 apt-get update
 apt-get install -y git cmake gcc  libgflags-dev libgoogle-glog-dev liblmdb-dev libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler libatlas-base-dev libboost1.55* python3-dev python3-pip python3
 wget https://google-glog.googlecode.com/files/glog-0.3.3.tar.gz
